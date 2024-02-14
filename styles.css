@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap");
+
+:root {
+  --cor-primaria: #22d4fd;
+}
+
+html {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  /* 3 linhas abaixo para botar o rodapé bem abaixo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+main {
+  flex: 1;
+}
+a {
+  color: var(--cor-primaria);
+}
+.titulo-destaque {
+  color: var(--cor-primaria);
+}
+
+.paragrafo-destaque {
+  color: var(--cor-primaria);
+}
+
+#Front-end {
+  text-decoration: underline;
+}
+
+.apresentacao {
+  margin: 0% 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#foto-perfil {
+  width: 380px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-family: "Dosis", sans-serif;
+  font-size: 2.18rem;
+}
+
+.apresentacao__conteudo__texto {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 1.12rem;
+}
+
+.apresentacao__conteudo__texto__aboutme {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 1.12rem;
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.apresentacao__links__navegacao {
+  border-color: var(--cor-primaria);
+  border-width: 2px;
+  border-style: outset;
+  border-radius: 14px;
+  width: 50%;
+  padding: 3%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  color: white;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  font-size: 17px;
+}
+
+.botoesLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.botoesLinks :hover {
+  background-color: #272727;
+}
+
+.tituloLinks {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.12rem;
+}
+/*
+footer {
+  color: white;
+  background-color: var(--cor-primaria);
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}*/
+
+nav {
+  width: 70%;
+  background-color: black;
+  display: flex;
+  margin: 1% 16%;
+  margin-bottom: 0%;
+  gap: 6%;
+  font-family: "Dosis", sans-serif;
+}
+
+.linksCabecalho {
+  text-decoration: none;
+  padding: 1px 3px 1px 3px;
+}
+
+.cabecalhoMenu :hover {
+  background-color: var(--cor-primaria);
+  border-radius: 2px;
+  color: black;
+}
+
+.logoGithub {
+  width: 20px;
+}
+
+.logoLinkedin {
+  width: 20px;
+}
+
+@media (max-width: 1100px) {
+  header {
+    padding: 0;
+    margin-top: 5%;
+    width: auto;
+  }
+  .cabecalhoMenu {
+    justify-content: center;
+    gap: 10%;
+    font-size: 10px;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+    margin: auto;
+    gap: 20px;
+  }
+  .apresentacao__conteudo {
+    width: auto;
+    gap: 10px;
+  }
+  #foto-perfil {
+    width: 200px;
+  }
+  .apresentacao__links__navegacao {
+    width: 30%;
+    padding: 1%;
+  }
+  .apresentacao__conteudo__titulo {
+    font-size: 1.5rem;
+  }
+  .apresentacao__links {
+    gap: 8px;
+    margin-bottom: 10%;
+  }
+  footer {
+    margin-top: 5px;
+  }
+  .apresentacao__conteudo__texto__aboutme {
+    width: auto;
+    gap: 10px;
+  }
+  html {
+    overflow: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
